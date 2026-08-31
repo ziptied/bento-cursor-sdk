@@ -1,0 +1,62 @@
+{
+  "name": "bento-mcp",
+  "displayName": "Bento MCP",
+  "version": "1.0.0",
+  "description": "Connect Cursor to Bento to manage subscribers, tags, events, broadcasts, automations, templates, analytics, and support workflows.",
+  "author": {
+    "name": "Bento",
+    "url": "https://bentonow.com"
+  },
+  "homepage": "https://bentonow.com",
+  "repository": "https://github.com/ziptied/bento-cursor-sdk",
+  "logo": "assets/logo.svg",
+  "primaryColor": "#22b8cf",
+  "license": "MIT",
+  "keywords": [
+    "bento",
+    "email marketing",
+    "marketing automation",
+    "mcp",
+    "analytics",
+    "deliverability",
+    "customer engagement",
+    "shared inbox"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "bento",
+    "email",
+    "automation",
+    "marketing",
+    "mcp"
+  ],
+  "mcpServers": "mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "BENTO_PUBLISHABLE_KEY": {
+        "type": "string",
+        "title": "Bento publishable key",
+        "description": "Your Bento API publishable key.",
+        "minLength": 8
+      },
+      "BENTO_SECRET_KEY": {
+        "type": "string",
+        "title": "Bento secret key",
+        "description": "Your Bento API secret key. Keep this value private.",
+        "minLength": 8
+      },
+      "BENTO_SITE_UUID": {
+        "type": "string",
+        "title": "Bento site UUID",
+        "description": "The Bento site UUID to use for API calls.",
+        "minLength": 8
+      }
+    },
+    "required": [
+      "BENTO_PUBLISHABLE_KEY",
+      "BENTO_SECRET_KEY",
+      "BENTO_SITE_UUID"
+    ]
+  }
+}
